@@ -4,61 +4,61 @@
     <meta charset="UTF-8">
     <title>Mason [Last Name] | Guest Experience Expert</title>
     <style>
-        /* Ritz-Carlton Inspired Aesthetics */
+        /* DESIGN PHILOSOPHY: Timeless, Structured, Minimalist */
         :root {
             --ritz-blue: #002D56;
             --ritz-gold: #AD944D;
-            --cream-white: #FFFFFF;
-            --text-charcoal: #333333;
+            --page-bg: #e8e8e8;
+            --card-bg: #ffffff;
+            --text-main: #1a1a1a;
         }
 
         body {
-            font-family: 'EB Garamond', 'Garamond', 'Georgia', serif;
-            background-color: #f0f0f0;
-            color: var(--text-charcoal);
+            font-family: 'Baskerville', 'Georgia', serif;
+            background-color: var(--page-bg);
+            color: var(--text-main);
             margin: 0;
-            padding: 40px 0;
+            padding: 50px 20px;
         }
 
         .resume-card {
-            max-width: 800px;
+            max-width: 750px;
             margin: auto;
-            background: var(--cream-white);
-            padding: 60px 80px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-            border: 1px solid #ddd;
+            background: var(--card-bg);
+            padding: 60px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
             position: relative;
         }
 
-        /* Gold frame accent */
+        /* Gold Frame */
         .resume-card::before {
             content: "";
             position: absolute;
             top: 20px; left: 20px; right: 20px; bottom: 20px;
             border: 1px solid var(--ritz-gold);
-            opacity: 0.4;
+            opacity: 0.3;
             pointer-events: none;
         }
 
         header { text-align: center; margin-bottom: 40px; }
-        h1 { color: var(--ritz-blue); font-size: 30pt; font-weight: 400; margin: 0; letter-spacing: 3px; text-transform: uppercase; }
-        .subtitle { font-size: 10pt; letter-spacing: 2px; color: var(--ritz-gold); text-transform: uppercase; margin-top: 10px; }
+        h1 { color: var(--ritz-blue); font-size: 26pt; margin: 0; letter-spacing: 5px; text-transform: uppercase; font-weight: 300; }
+        .contact { font-size: 9.5pt; color: var(--ritz-gold); letter-spacing: 2px; text-transform: uppercase; margin-top: 12px; }
         
-        h2 { font-size: 13pt; color: var(--ritz-blue); text-transform: uppercase; letter-spacing: 2px; border-bottom: 2px solid var(--ritz-blue); padding-bottom: 5px; margin-top: 30px; }
+        h2 { font-size: 10.5pt; color: var(--ritz-blue); text-transform: uppercase; letter-spacing: 3px; border-bottom: 1px solid var(--ritz-gold); padding-bottom: 6px; margin-top: 35px; }
 
-        .summary-box { font-size: 11pt; line-height: 1.8; text-align: center; color: var(--text-charcoal); margin-bottom: 30px; }
+        .summary { font-size: 11pt; font-style: italic; text-align: center; color: #333; margin-bottom: 40px; padding: 0 10px; }
 
-        .exp-block { margin-bottom: 20px; }
-        .exp-header { display: flex; justify-content: space-between; font-weight: bold; font-size: 11pt; color: var(--ritz-blue); }
-        .job-title { font-style: italic; color: #555; margin-bottom: 5px; }
+        .exp-item { margin-bottom: 25px; }
+        .exp-header { display: flex; justify-content: space-between; font-weight: bold; color: var(--ritz-blue); font-size: 11pt; }
+        .job-title { font-style: italic; color: #666; font-size: 10pt; margin-bottom: 8px; }
         
-        ul { list-style-type: none; padding-left: 0; }
-        li { margin-bottom: 8px; position: relative; padding-left: 20px; font-size: 10.5pt; }
-        li::before { content: "•"; color: var(--ritz-gold); position: absolute; left: 0; }
+        ul { list-style: none; padding-left: 0; }
+        li { margin-bottom: 9px; font-size: 10.5pt; padding-left: 20px; position: relative; line-height: 1.5; }
+        li::before { content: "—"; color: var(--ritz-gold); position: absolute; left: 0; font-weight: bold; }
 
-        .footer { margin-top: 40px; text-align: center; font-style: italic; color: var(--ritz-blue); font-size: 11pt; border-top: 1px solid var(--ritz-gold); padding-top: 20px; }
+        .footer { margin-top: 50px; text-align: center; font-style: italic; color: var(--ritz-blue); font-size: 11pt; border-top: 1px solid var(--ritz-gold); padding-top: 20px; letter-spacing: 0.5px; }
 
-        @media print { body { background: none; } .resume-card { box-shadow: none; border: none; } }
+        @media print { body { background: none; padding: 0; } .resume-card { box-shadow: none; border: none; } }
     </style>
 </head>
 <body>
@@ -66,44 +66,45 @@
 <div class="resume-card">
     <header>
         <h1>Mason [Last Name]</h1>
-        <div class="subtitle">Guest Experience Expert | Relocating to Avon, CO</div>
+        <div class="contact">
+            Relocating to Avon, CO | Available for Immediate Start <br>
+            [Phone Number] &bull; [Email Address]
+        </div>
     </header>
 
-    <section class="summary-box">
-        "A dedicated hospitality professional committed to the <strong>Gold Standards</strong> of The Ritz-Carlton. 
-        I specialize in delivering <strong>anticipatory service</strong> that transforms every interaction into a 
-        rare and memorable experience. Eager to contribute my expertise in refined guest relations and 
-        operational excellence to ensure every guest feels truly welcomed and cared for."
+    <section class="summary">
+        "A dedicated hospitality professional committed to the <strong>Gold Standards</strong>. I specialize in the art of <strong>anticipatory service</strong>, transforming guest interactions into curated, rare, and memorable moments. With an owner’s mindset toward guest relations, I ensure every arrival, inquiry, and departure is handled with the grace and personalized care that defines the Marriott luxury portfolio."
     </section>
 
     <h2>Professional Pedigree</h2>
     
-    <div class="exp-block">
+    <div class="exp-item">
         <div class="exp-header"><span>Brinkerhoff Hospitality</span><span>Present</span></div>
         <div class="job-title">Culinary Manager</div>
         <ul>
-            <li>Orchestrated high-end operations with a focus on <strong>precision and artistry</strong>, ensuring every guest interaction met the highest luxury quality standards.</li>
-            <li>Empowered staff through mentorship, fostering a culture of excellence and <strong>seamless team collaboration</strong> in sophisticated environments.</li>
+            <li>Orchestrated high-touch service environments, ensuring that operational logistics remained invisible to the guest while maintaining an uncompromising standard of excellence.</li>
+            <li>Cultivated a culture of service-led precision, mentoring team members to view every engagement as an opportunity to exceed expectations through proactive, intuitive care.</li>
         </ul>
     </div>
 
-    <div class="exp-block">
+    <div class="exp-item">
         <div class="exp-header"><span>Flying Horse Resort & Club</span><span>2021 – 2023</span></div>
         <div class="job-title">Lead Hospitality Ambassador</div>
         <ul>
-            <li>Facilitated a <strong>"Signature" service model</strong> for private club clientele, providing warm, personalized care to craft lifelong memories.</li>
-            <li>Served as a local ambassador, sharing curated <strong>area highlights</strong> to ensure each guest’s stay was both unique and exceptional.</li>
+            <li>Executed a 'Signature' service model, consistently delivering refined, personalized attention that fostered deep guest loyalty and repeat-visit intent.</li>
+            <li>Curated the guest experience by serving as a knowledgeable local liaison, tailoring recommendations for mountain activities and area highlights to align with unique lifestyle preferences.</li>
         </ul>
     </div>
 
-    <h2>Core Expertise</h2>
-    <div class="exp-block">
-        <ul>
-            <li><strong>Anticipatory Service:</strong> Identifying and fulfilling guest needs with grace before they are articulated.</li>
-            <li><strong>Operational Excellence:</strong> Upholding the Gold Standards in every check-in, request, and guest transaction.</li>
-            <li><strong>Refined Communication:</strong> Maintaining a professional, welcoming presence consistent with a luxury brand.</li>
-        </ul>
-    </div>
+    <h2>Core Competencies</h2>
+    <ul style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+        <li>Anticipatory Guest Care</li>
+        <li>Operational Logistics</li>
+        <li>Luxury Quality Standards</li>
+        <li>Local Area Ambassadorship</li>
+        <li>Refined Communication</li>
+        <li>Service-Led Mentorship</li>
+    </ul>
 
     <div class="footer">
         "We are Ladies and Gentlemen serving Ladies and Gentlemen."
