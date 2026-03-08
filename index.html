@@ -2,190 +2,112 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume - Guest Experience Expert - Ritz-Carlton</title>
+    <title>Mason [Last Name] | Guest Experience Expert</title>
     <style>
+        /* Ritz-Carlton Inspired Aesthetics */
         :root {
             --ritz-blue: #002D56;
             --ritz-gold: #AD944D;
-            --text-dark: #222;
-            --text-light: #555;
+            --cream-white: #FFFFFF;
+            --text-charcoal: #333333;
         }
 
         body {
-            font-family: 'Arial', sans-serif; /* ATS-Friendly Font */
-            line-height: 1.5;
-            color: var(--text-dark);
-            background-color: #f4f4f4;
+            font-family: 'EB Garamond', 'Garamond', 'Georgia', serif;
+            background-color: #f0f0f0;
+            color: var(--text-charcoal);
             margin: 0;
-            padding: 20px;
+            padding: 40px 0;
         }
 
-        .resume-page {
+        .resume-card {
             max-width: 800px;
             margin: auto;
-            background: #fff;
-            padding: 40px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            background: var(--cream-white);
+            padding: 60px 80px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            border: 1px solid #ddd;
+            position: relative;
         }
 
-        header {
-            text-align: center;
-            border-bottom: 2px solid var(--ritz-blue);
-            padding-bottom: 15px;
-            margin-bottom: 20px;
+        /* Gold frame accent */
+        .resume-card::before {
+            content: "";
+            position: absolute;
+            top: 20px; left: 20px; right: 20px; bottom: 20px;
+            border: 1px solid var(--ritz-gold);
+            opacity: 0.4;
+            pointer-events: none;
         }
 
-        h1 {
-            margin: 0;
-            color: var(--ritz-blue);
-            font-size: 24pt;
-            text-transform: uppercase;
-        }
+        header { text-align: center; margin-bottom: 40px; }
+        h1 { color: var(--ritz-blue); font-size: 30pt; font-weight: 400; margin: 0; letter-spacing: 3px; text-transform: uppercase; }
+        .subtitle { font-size: 10pt; letter-spacing: 2px; color: var(--ritz-gold); text-transform: uppercase; margin-top: 10px; }
+        
+        h2 { font-size: 13pt; color: var(--ritz-blue); text-transform: uppercase; letter-spacing: 2px; border-bottom: 2px solid var(--ritz-blue); padding-bottom: 5px; margin-top: 30px; }
 
-        .contact-info {
-            margin-top: 10px;
-            font-size: 10pt;
-            color: var(--text-light);
-        }
+        .summary-box { font-size: 11pt; line-height: 1.8; text-align: center; color: var(--text-charcoal); margin-bottom: 30px; }
 
-        h2 {
-            font-size: 14pt;
-            color: var(--ritz-blue);
-            border-bottom: 1px solid var(--ritz-gold);
-            text-transform: uppercase;
-            margin-top: 25px;
-            margin-bottom: 10px;
-        }
+        .exp-block { margin-bottom: 20px; }
+        .exp-header { display: flex; justify-content: space-between; font-weight: bold; font-size: 11pt; color: var(--ritz-blue); }
+        .job-title { font-style: italic; color: #555; margin-bottom: 5px; }
+        
+        ul { list-style-type: none; padding-left: 0; }
+        li { margin-bottom: 8px; position: relative; padding-left: 20px; font-size: 10.5pt; }
+        li::before { content: "•"; color: var(--ritz-gold); position: absolute; left: 0; }
 
-        .summary-text {
-            font-size: 11pt;
-            text-align: justify;
-        }
+        .footer { margin-top: 40px; text-align: center; font-style: italic; color: var(--ritz-blue); font-size: 11pt; border-top: 1px solid var(--ritz-gold); padding-top: 20px; }
 
-        .skills-container {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 0 20px;
-        }
-
-        .experience-header {
-            display: flex;
-            justify-content: space-between;
-            font-weight: bold;
-            margin-top: 15px;
-        }
-
-        .job-title {
-            color: var(--ritz-blue);
-            font-style: italic;
-        }
-
-        ul {
-            margin: 5px 0;
-            padding-left: 20px;
-        }
-
-        li {
-            margin-bottom: 5px;
-            font-size: 10.5pt;
-        }
-
-        .education-item {
-            display: flex;
-            justify-content: space-between;
-        }
-
-        .highlight {
-            font-weight: bold;
-            color: var(--ritz-blue);
-        }
-
-        @media print {
-            body { background: none; padding: 0; }
-            .resume-page { box-shadow: none; width: 100%; }
-        }
+        @media print { body { background: none; } .resume-card { box-shadow: none; border: none; } }
     </style>
 </head>
 <body>
 
-<div class="resume-page">
+<div class="resume-card">
     <header>
-        <h1>[Your Full Name]</h1>
-        <div class="contact-info">
-            Avon, CO Resident | [Phone Number] | [Email Address] | [LinkedIn URL]
-        </div>
+        <h1>Mason [Last Name]</h1>
+        <div class="subtitle">Guest Experience Expert | Relocating to Avon, CO</div>
     </header>
 
-    <section>
-        <h2>Professional Summary</h2>
-        <p class="summary-text">
-            Enthusiastic and detail-oriented professional with a passion for <span class="highlight">luxury hospitality</span>, seeking to leverage strong interpersonal skills as a <span class="highlight">Guest Experience Expert</span> at The Ritz-Carlton Bachelor Gulch. Experienced in addressing guest requests and ensuring seamless operations in fast-paced environments, committed to upholding the <span class="highlight">Gold Standards</span> by delivering thoughtful service and sharing local area highlights. High school graduate eager to contribute to creating exceptional stays and memorable experiences for every guest.
-        </p>
+    <section class="summary-box">
+        "A dedicated hospitality professional committed to the <strong>Gold Standards</strong> of The Ritz-Carlton. 
+        I specialize in delivering <strong>anticipatory service</strong> that transforms every interaction into a 
+        rare and memorable experience. Eager to contribute my expertise in refined guest relations and 
+        operational excellence to ensure every guest feels truly welcomed and cared for."
     </section>
 
-    <section>
-        <h2>Core Skills</h2>
-        <div class="skills-container">
-            <ul>
-                <li>Guest Services & Check-In/Out</li>
-                <li>Addressing Operational Needs</li>
-                <li>Local Area Highlights (Vail/Avon)</li>
-                <li>Upholding Quality Standards</li>
-            </ul>
-            <ul>
-                <li>Confidentiality & Asset Protection</li>
-                <li>Transaction & Report Management</li>
-                <li>Physical Stamina (Standing/Walking)</li>
-                <li>Professional Appearance & Etiquette</li>
-            </ul>
-        </div>
-    </section>
-
-    <section>
-        <h2>Professional Experience</h2>
-        
-        <div class="experience-header">
-            <span>[Most Recent Company]</span>
-            <span>[Dates of Employment]</span>
-        </div>
-        <div class="job-title">[Job Title, e.g., Customer Service Associate]</div>
+    <h2>Professional Pedigree</h2>
+    
+    <div class="exp-block">
+        <div class="exp-header"><span>Brinkerhoff Hospitality</span><span>Present</span></div>
+        <div class="job-title">Culinary Manager</div>
         <ul>
-            <li>Delivered personalized guest services to over <span class="highlight">50+ customers daily</span>, resolving requests and ensuring 100% satisfaction, mirroring the Ritz-Carlton focus on thoughtful experiences.</li>
-            <li>Managed <span class="highlight">operational needs</span> including inventory checks and transaction processing, maintaining high accuracy in daily reports.</li>
-            <li>Shared <span class="highlight">local area highlights</span> with visitors to enhance their overall experience and build brand loyalty.</li>
-            <li>Strictly upheld company policies regarding <span class="highlight">confidentiality</span> and professional appearance, contributing to a safe and welcoming work environment.</li>
+            <li>Orchestrated high-end operations with a focus on <strong>precision and artistry</strong>, ensuring every guest interaction met the highest luxury quality standards.</li>
+            <li>Empowered staff through mentorship, fostering a culture of excellence and <strong>seamless team collaboration</strong> in sophisticated environments.</li>
         </ul>
+    </div>
 
-        <div class="experience-header">
-            <span>[Previous Organization]</span>
-            <span>[Dates of Participation]</span>
-        </div>
-        <div class="job-title">[Title, e.g., Volunteer Coordinator or Student Leader]</div>
+    <div class="exp-block">
+        <div class="exp-header"><span>Flying Horse Resort & Club</span><span>2021 – 2023</span></div>
+        <div class="job-title">Lead Hospitality Ambassador</div>
         <ul>
-            <li>Guided participants through event processes, addressing inquiries promptly to create a <span class="highlight">seamless experience</span>.</li>
-            <li>Collaborated with diverse teams to follow safety protocols and quality standards, ensuring all activities aligned with organizational values.</li>
+            <li>Facilitated a <strong>"Signature" service model</strong> for private club clientele, providing warm, personalized care to craft lifelong memories.</li>
+            <li>Served as a local ambassador, sharing curated <strong>area highlights</strong> to ensure each guest’s stay was both unique and exceptional.</li>
         </ul>
-    </section>
+    </div>
 
-    <section>
-        <h2>Education</h2>
-        <div class="education-item">
-            <span><strong>High School Diploma</strong> | [School Name], [City, State]</span>
-            <span>[Graduation Year]</span>
-        </div>
+    <h2>Core Expertise</h2>
+    <div class="exp-block">
         <ul>
-            <li>Relevant Coursework: Customer Service, Communications, [Language if applicable].</li>
+            <li><strong>Anticipatory Service:</strong> Identifying and fulfilling guest needs with grace before they are articulated.</li>
+            <li><strong>Operational Excellence:</strong> Upholding the Gold Standards in every check-in, request, and guest transaction.</li>
+            <li><strong>Refined Communication:</strong> Maintaining a professional, welcoming presence consistent with a luxury brand.</li>
         </ul>
-    </section>
+    </div>
 
-    <section>
-        <h2>Certifications & Languages</h2>
-        <ul>
-            <li><strong>Languages:</strong> [e.g., Fluent in English and Spanish]</li>
-            <li><strong>Safety:</strong> [e.g., CPR/First Aid Certified]</li>
-        </ul>
-    </section>
+    <div class="footer">
+        "We are Ladies and Gentlemen serving Ladies and Gentlemen."
+    </div>
 </div>
 
 </body>
