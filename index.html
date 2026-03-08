@@ -12,7 +12,6 @@
             --card-bg: #ffffff;
             --text-main: #1a1a1a;
         }
-
         body {
             font-family: 'Baskerville', 'Georgia', serif;
             background-color: var(--page-bg);
@@ -20,7 +19,6 @@
             margin: 0;
             padding: 50px 20px;
         }
-
         .resume-card {
             max-width: 750px;
             margin: auto;
@@ -29,7 +27,6 @@
             box-shadow: 0 10px 25px rgba(0,0,0,0.1);
             position: relative;
         }
-
         /* Gold Frame */
         .resume-card::before {
             content: "";
@@ -39,30 +36,27 @@
             opacity: 0.3;
             pointer-events: none;
         }
-
         header { text-align: center; margin-bottom: 40px; }
         h1 { color: var(--ritz-blue); font-size: 26pt; margin: 0; letter-spacing: 5px; text-transform: uppercase; font-weight: 300; }
         .contact { font-size: 9.5pt; color: var(--ritz-gold); letter-spacing: 2px; text-transform: uppercase; margin-top: 12px; }
-        
+       
         h2 { font-size: 10.5pt; color: var(--ritz-blue); text-transform: uppercase; letter-spacing: 3px; border-bottom: 1px solid var(--ritz-gold); padding-bottom: 6px; margin-top: 35px; }
-
         .summary { font-size: 11pt; font-style: italic; text-align: center; color: #333; margin-bottom: 40px; padding: 0 10px; }
-
         .exp-item { margin-bottom: 25px; }
         .exp-header { display: flex; justify-content: space-between; font-weight: bold; color: var(--ritz-blue); font-size: 11pt; }
         .job-title { font-style: italic; color: #666; font-size: 10pt; margin-bottom: 8px; }
-        
+       
         ul { list-style: none; padding-left: 0; }
         li { margin-bottom: 9px; font-size: 10.5pt; padding-left: 20px; position: relative; line-height: 1.5; }
         li::before { content: "—"; color: var(--ritz-gold); position: absolute; left: 0; font-weight: bold; }
-
+        .edu-item { margin-bottom: 25px; }
+        .edu-header { font-weight: bold; color: var(--ritz-blue); font-size: 11pt; }
+        .edu-details { font-style: italic; color: #666; font-size: 10pt; margin-bottom: 8px; }
         .footer { margin-top: 50px; text-align: center; font-style: italic; color: var(--ritz-blue); font-size: 11pt; border-top: 1px solid var(--ritz-gold); padding-top: 20px; letter-spacing: 0.5px; }
-
         @media print { body { background: none; padding: 0; } .resume-card { box-shadow: none; border: none; } }
     </style>
 </head>
 <body>
-
 <div class="resume-card">
     <header>
         <h1>Mason [Last Name]</h1>
@@ -71,31 +65,45 @@
             [Phone Number] &bull; [Email Address]
         </div>
     </header>
-
     <section class="summary">
         "A dedicated hospitality professional committed to the <strong>Gold Standards</strong>. I specialize in the art of <strong>anticipatory service</strong>, transforming guest interactions into curated, rare, and memorable moments. With an owner’s mindset toward guest relations, I ensure every arrival, inquiry, and departure is handled with the grace and personalized care that defines the Marriott luxury portfolio."
     </section>
-
     <h2>Professional Pedigree</h2>
-    
+   
     <div class="exp-item">
         <div class="exp-header"><span>Brinkerhoff Hospitality</span><span>Present</span></div>
         <div class="job-title">Culinary Manager</div>
         <ul>
             <li>Orchestrated high-touch service environments, ensuring that operational logistics remained invisible to the guest while maintaining an uncompromising standard of excellence.</li>
             <li>Cultivated a culture of service-led precision, mentoring team members to view every engagement as an opportunity to exceed expectations through proactive, intuitive care.</li>
+            <li>Managed purchasing and inventory for high-end concepts, utilizing food-and-beverage logistics to optimize costs and uphold brand integrity in luxury hospitality operations.</li>
         </ul>
     </div>
-
     <div class="exp-item">
         <div class="exp-header"><span>Flying Horse Resort & Club</span><span>2021 – 2023</span></div>
         <div class="job-title">Lead Hospitality Ambassador</div>
         <ul>
             <li>Executed a 'Signature' service model, consistently delivering refined, personalized attention that fostered deep guest loyalty and repeat-visit intent.</li>
             <li>Curated the guest experience by serving as a knowledgeable local liaison, tailoring recommendations for mountain activities and area highlights to align with unique lifestyle preferences.</li>
+            <li>Directed logistics for diverse luxury dining venues, ensuring a sophisticated atmosphere and addressing operational needs to enhance overall guest satisfaction.</li>
         </ul>
     </div>
-
+    <div class="exp-item">
+        <div class="exp-header"><span>Loyal Coffee</span><span>2019 – 2021</span></div>
+        <div class="job-title">Chef De Partie</div>
+        <ul>
+            <li>Facilitated an elevated food program with a hyper-focus on hospitality, utilizing classical techniques to build dishes to order and exceed guest expectations in a timely manner.</li>
+            <li>Innovated kitchen efficiency by spearheading prep workflows, ensuring detailed consistency and supporting operational needs in high-standard environments.</li>
+        </ul>
+    </div>
+    <h2>Academic Pedigree</h2>
+    <div class="edu-item">
+        <div class="edu-header">A.O.S. in Hospitality & Restaurant Operations Management</div>
+        <div class="edu-details">Auguste Escoffier School of Culinary Arts, Boulder, CO</div>
+        <ul>
+            <li>Leveraged classical training to direct complex facilities operations, with emphasis on cost-control and menu-design strategies for luxury industry brand integrity.</li>
+        </ul>
+    </div>
     <h2>Core Competencies</h2>
     <ul style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
         <li>Anticipatory Guest Care</li>
@@ -104,12 +112,12 @@
         <li>Local Area Ambassadorship</li>
         <li>Refined Communication</li>
         <li>Service-Led Mentorship</li>
+        <li>Guest Services & Check-In/Check-Out</li>
+        <li>Addressing Guest Requests</li>
     </ul>
-
     <div class="footer">
         "We are Ladies and Gentlemen serving Ladies and Gentlemen."
     </div>
 </div>
-
 </body>
 </html>
