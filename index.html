@@ -2,268 +2,138 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mason | Strategic Guest Experience Facilitator</title>
-    <meta name="description" content="Facilitator of high-end guest ecosystems with a record across the luxury industry. Leveraging expertise to innovate anticipatory service models and direct operations with detailed precision.">
-    
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Service",
-      "serviceType": "Luxury Hospitality & Guest Experience Strategy",
-      "provider": {
-        "@type": "Person",
-        "name": "Mason",
-        "description": "Facilitator of high-end guest ecosystems with a record across the luxury hospitality industry.",
-        "address": { "@type": "PostalAddress", "addressLocality": "Avon", "addressRegion": "CO" }
-      },
-      "areaServed": { "@type": "State", "name": "Colorado" }
-    }
-    </script>
-
+    <title>Mason [Last Name] | Guest Experience Expert</title>
     <style>
+        /* DESIGN PHILOSOPHY: Timeless, Structured, Minimalist */
         :root {
             --ritz-blue: #002D56;
             --ritz-gold: #AD944D;
-            --obsidian: #1a1a1a;
-            --bone: #F9F8F6;
-            --gold-soft: rgba(173, 148, 77, 0.2);
+            --page-bg: #e8e8e8;
+            --card-bg: #ffffff;
+            --text-main: #1a1a1a;
         }
-
-        * { box-sizing: border-box; transition: all 0.3s ease; }
-        
         body {
             font-family: 'Baskerville', 'Georgia', serif;
-            background-color: var(--bone);
-            color: var(--obsidian);
+            background-color: var(--page-bg);
+            color: var(--text-main);
             margin: 0;
-            line-height: 1.7;
+            padding: 50px 20px;
         }
-
-        .terminal-container {
-            max-width: 900px;
-            margin: 40px auto;
-            background: #ffffff;
+        .resume-card {
+            max-width: 750px;
+            margin: auto;
+            background: var(--card-bg);
+            padding: 60px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
             position: relative;
-            box-shadow: 0 20px 50px rgba(0,0,0,0.05);
-            border: 1px solid #eee;
         }
-
-        /* The Sovereign Frame */
-        .terminal-container::before {
+        /* Gold Frame */
+        .resume-card::before {
             content: "";
             position: absolute;
-            top: 15px; left: 15px; right: 15px; bottom: 15px;
+            top: 20px; left: 20px; right: 20px; bottom: 20px;
             border: 1px solid var(--ritz-gold);
-            opacity: 0.2;
+            opacity: 0.3;
             pointer-events: none;
         }
-
-        header {
-            text-align: center;
-            padding: 80px 40px 40px;
-            border-bottom: 1px solid var(--gold-soft);
-        }
-
-        h1 {
-            color: var(--ritz-blue);
-            font-size: 32pt;
-            letter-spacing: 8px;
-            text-transform: uppercase;
-            font-weight: 300;
-            margin: 0;
-        }
-
-        .contact-bar {
-            font-family: 'Helvetica', sans-serif;
-            font-size: 9pt;
-            color: var(--ritz-gold);
-            letter-spacing: 3px;
-            text-transform: uppercase;
-            margin-top: 20px;
-        }
-
-        .summary-block {
-            padding: 60px 80px;
-            text-align: center;
-            font-style: italic;
-            font-size: 13pt;
-            color: #444;
-            line-height: 1.8;
-        }
-
-        section { padding: 40px 80px; }
-
-        h2 {
-            font-size: 11pt;
-            color: var(--ritz-blue);
-            text-transform: uppercase;
-            letter-spacing: 4px;
-            border-bottom: 1px solid var(--gold-soft);
-            padding-bottom: 10px;
-            margin-bottom: 30px;
-        }
-
-        .exp-item { margin-bottom: 40px; }
-
-        .exp-header {
-            display: flex;
-            justify-content: space-between;
-            font-weight: bold;
-            color: var(--ritz-blue);
-            letter-spacing: 1px;
-        }
-
-        .job-title {
-            color: var(--ritz-gold);
-            font-style: italic;
-            font-size: 10.5pt;
-            margin-bottom: 15px;
-        }
-
-        ul { list-style: none; padding: 0; }
-        li {
-            position: relative;
-            padding-left: 25px;
-            margin-bottom: 12px;
-            font-size: 10.5pt;
-        }
-
-        li::before {
-            content: "—";
-            position: absolute;
-            left: 0;
-            color: var(--ritz-gold);
-        }
-
-        .skills-matrix {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            gap: 30px;
-        }
-
-        .skill-cat h3 {
-            font-size: 10pt;
-            color: var(--ritz-blue);
-            text-transform: uppercase;
-            margin-bottom: 15px;
-        }
-
-        footer {
-            background: var(--obsidian);
-            color: var(--bone);
-            padding: 60px 80px;
-            margin-top: 40px;
-        }
-
-        .footer-grid {
-            display: grid;
-            grid-cols: 1fr 1fr;
-            gap: 40px;
-        }
-
-        .credential-link {
-            display: block;
-            color: var(--bone);
-            text-decoration: none;
-            font-size: 9pt;
-            margin-bottom: 10px;
-            opacity: 0.8;
-        }
-
-        .credential-link:hover { opacity: 1; color: var(--ritz-gold); }
-
-        @media (max-width: 768px) {
-            .summary-block, section, footer { padding: 40px 30px; }
-            .skills-matrix { grid-template-columns: 1fr; }
-        }
+        header { text-align: center; margin-bottom: 40px; }
+        h1 { color: var(--ritz-blue); font-size: 26pt; margin: 0; letter-spacing: 5px; text-transform: uppercase; font-weight: 300; }
+        .contact { font-size: 9.5pt; color: var(--ritz-gold); letter-spacing: 2px; text-transform: uppercase; margin-top: 12px; }
+       
+        h2 { font-size: 10.5pt; color: var(--ritz-blue); text-transform: uppercase; letter-spacing: 3px; border-bottom: 1px solid var(--ritz-gold); padding-bottom: 6px; margin-top: 35px; }
+        .summary { font-size: 11pt; font-style: italic; text-align: center; color: #333; margin-bottom: 40px; padding: 0 10px; }
+        .exp-item { margin-bottom: 25px; }
+        .exp-header { display: flex; justify-content: space-between; font-weight: bold; color: var(--ritz-blue); font-size: 11pt; }
+        .job-title { font-style: italic; color: #666; font-size: 10pt; margin-bottom: 8px; }
+       
+        ul { list-style: none; padding-left: 0; }
+        li { margin-bottom: 9px; font-size: 10.5pt; padding-left: 20px; position: relative; line-height: 1.5; }
+        li::before { content: "—"; color: var(--ritz-gold); position: absolute; left: 0; font-weight: bold; }
+        .edu-item { margin-bottom: 25px; }
+        .edu-header { font-weight: bold; color: var(--ritz-blue); font-size: 11pt; }
+        .edu-details { font-style: italic; color: #666; font-size: 10pt; margin-bottom: 8px; }
+        .footer { margin-top: 50px; text-align: center; font-style: italic; color: var(--ritz-blue); font-size: 11pt; border-top: 1px solid var(--ritz-gold); padding-top: 20px; letter-spacing: 0.5px; }
+        @media print { body { background: none; padding: 0; } .resume-card { box-shadow: none; border: none; } }
     </style>
 </head>
 <body>
-
-<div class="terminal-container">
+<div class="resume-card">
     <header>
-        <h1>Mason</h1>
-        <div class="contact-bar">
-            Avon, Colorado &bull; Record Across Luxury Markets <br>
-            [Phone] &bull; [Email]
+        <h1>Mason [Last Name]</h1>
+        <div class="contact">
+            Relocating to Avon, CO | Available for Immediate Start <br>
+            [Phone Number] &bull; [Email Address]
         </div>
     </header>
-
-    <div class="summary-block">
-        "A dedicated <strong>facilitator</strong> of high-end guest ecosystems, <strong>leveraging</strong> a 
-        decade of experience to <strong>innovate</strong> anticipatory service models. 
-        I <strong>direct</strong> operations with an owner’s mindset, ensuring <strong>verified</strong> 
-        excellence and <strong>detailed</strong> brand integrity in the luxury <strong>industry</strong>."
+    <section class="summary">
+        "A dedicated hospitality professional committed to the <strong>Gold Standards</strong>. I specialize in the art of <strong>anticipatory service</strong>, transforming guest interactions into curated, rare, and memorable moments. With an owner’s mindset toward guest relations, I ensure every arrival, inquiry, and departure is handled with the grace and personalized care that defines the Marriott luxury portfolio."
+    </section>
+    <h2>Professional Pedigree</h2>
+   
+    <div class="exp-item">
+        <div class="exp-header"><span>Loyal Coffee / Brinkerhoff Hospitality</span><span>Colorado</span></div>
+        <div class="job-title">Chef De Partie</div>
+        <ul>
+            <li>Facilitated high-performance operations within a high-end restaurant group, ensuring authenticity and verification of quality in every output while addressing guest requests and operational needs.</li>
+            <li>Directed complex, fast-paced workflows within the hospitality industry, maintaining a premium standard of excellence and upholding quality standards through professional communications.</li>
+            <li>Detailed management of resource allocation, ensuring all standards were reviewed and peer-reviewed for consistency, while protecting company assets and maintaining a safe work place.</li>
+        </ul>
     </div>
-
-    <section>
-        <h2>Professional Pedigree</h2>
-        
-        <div class="exp-item">
-            <div class="exp-header"><span>Brinkerhoff Hospitality</span><span>Present</span></div>
-            <div class="job-title">Culinary Manager</div>
-            <ul>
-                <li><strong>Facilitated</strong> high-touch service environments, ensuring that operational logistics remained invisible to the guest.</li>
-                <li>Cultivated a culture of service-led precision, <strong>utilizing</strong> mentorship to exceed expectations through proactive care.</li>
-                <li>Managed purchasing for high-end concepts, <strong>utilizing</strong> food-and-beverage logistics to optimize costs.</li>
-            </ul>
-        </div>
-
-        <div class="exp-item">
-            <div class="exp-header"><span>Flying Horse Resort & Club</span><span>2021 – 2023</span></div>
-            <div class="job-title">Lead Hospitality Ambassador</div>
-            <ul>
-                <li>Executed a 'Signature' service model, fostering guest loyalty and <strong>verified</strong> repeat-visit intent.</li>
-                <li><strong>Directed</strong> logistics for diverse luxury dining venues, ensuring a sophisticated atmosphere and <strong>detailed</strong> satisfaction.</li>
-            </ul>
-        </div>
-    </section>
-
-    <section>
-        <h2>Strategic Competencies</h2>
-        <div class="skills-matrix">
-            <div class="skill-cat">
-                <h3>Systems</h3>
-                <ul>
-                    <li>Operational Logistics</li>
-                    <li>Verified Recovery</li>
-                    <li>Detailed Reporting</li>
-                </ul>
-            </div>
-            <div class="skill-cat">
-                <h3>Experience</h3>
-                <ul>
-                    <li>Anticipatory Care</li>
-                    <li>Industry Standards</li>
-                    <li>Ambassadorship</li>
-                </ul>
-            </div>
-            <div class="skill-cat">
-                <h3>Leadership</h3>
-                <ul>
-                    <li>Service Mentorship</li>
-                    <li>Refined Ability</li>
-                    <li>Strategic Direction</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px;">
-            <div>
-                <h4 style="color: var(--ritz-gold); font-size: 8pt; text-transform: uppercase; margin-bottom: 15px;">Verified Pedigree</h4>
-                <a href="#" class="credential-link">NVIDIA Network Engineering Certified</a>
-                <a href="#" class="credential-link">Escoffier Hospitality Management • A.O.S.</a>
-            </div>
-            <div style="text-align: right;">
-                <p style="font-style: italic; font-size: 11pt; margin-bottom: 5px;">"Ladies and Gentlemen serving Ladies and Gentlemen."</p>
-                <p style="font-size: 8pt; color: var(--ritz-gold); letter-spacing: 2px;">Authenticated Professional Terminal</p>
-            </div>
-        </div>
-    </footer>
+    <div class="exp-item">
+        <div class="exp-header"><span>Swell Marketing / Swellmarketing.xyz</span><span>Colorado</span></div>
+        <div class="job-title">Senior Strategist & Founder</div>
+        <ul>
+            <li>Innovated the evolution of the platform into an extensive online education center for agents specializing in SEO and GEO, demonstrating operational leadership in digital transformation.</li>
+            <li>Spearheaded the transition from legacy search models to generative engine strategies, utilizing data-driven insights to capture emerging search traffic and facilitate seamless user experiences.</li>
+            <li>Directed the architecture of Aetheris OS, an agentic swarm builder focused on durability and sustainable workflows, aligning with company policies and procedures for efficiency.</li>
+        </ul>
+    </div>
+    <div class="exp-item">
+        <div class="exp-header"><span>Digital Ecosystem Design</span><span>Colorado</span></div>
+        <div class="job-title">Lead Architect</div>
+        <ul>
+            <li>Directed the blueprints for the M / A / J Sanctuary, a high-performance wellness ecosystem integrating biohacking and proprietary wearables, curating memorable and unique experiences for users.</li>
+            <li>Innovated a polished, "Hudson Yards" visual language to align digital projects with an elite professional ethos, emphasizing professional appearance and refined communication.</li>
+        </ul>
+    </div>
+    <h2>Key Projects & Certifications</h2>
+    <ul>
+        <li>NVIDIA Certified: Introduction to Networking – Leveraging technical skills to support operational needs in dynamic environments.</li>
+        <li>Sovereign Harmony (SH-Commit): Developed an autonomous resource management framework to ensure validity in predictive modeling, applicable to maintaining confidentiality and quality standards.</li>
+        <li>Turo Premium Management: Directing fleet storage and logistical solutions for high-end vehicle markets in Orange County and Vail, sharing local area highlights and handling guest services.</li>
+    </ul>
+    <h2>Academic Pedigree</h2>
+    <div class="edu-item">
+        <div class="edu-header">Bachelor of Business Administration, Information Systems and Decision Sciences Concentration</div>
+    </div>
+    <div class="edu-item">
+        <div class="edu-header">Associate Degree in Culinary Arts</div>
+        <div class="edu-details">Escoffier School of Culinary Arts, Boulder, CO</div>
+    </div>
+    <div class="edu-item">
+        <div class="edu-header">Computer Information Systems</div>
+        <div class="edu-details">Extensive technical and systems training</div>
+    </div>
+    <h2>Core Competencies</h2>
+    <ul style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+        <li>Anticipatory Guest Care</li>
+        <li>Operational Logistics</li>
+        <li>Luxury Quality Standards</li>
+        <li>Local Area Ambassadorship</li>
+        <li>Refined Communication</li>
+        <li>Service-Led Mentorship</li>
+        <li>Guest Services & Check-In/Check-Out</li>
+        <li>Addressing Guest Requests</li>
+        <li>Memorable and Unique Experience</li>
+        <li>Company Policies and Procedures</li>
+        <li>Professional Uniform & Appearance</li>
+        <li>Employee Promise & Credo</li>
+        <li>Rooms & Guest Services Operations</li>
+        <li>Safe Work Place</li>
+    </ul>
+    <div class="footer">
+        "The Ritz-Carlton experience enlivens the senses, instills well-being, and fulfills even the unexpressed wishes and needs of our guests."
+    </div>
 </div>
-
 </body>
 </html>
